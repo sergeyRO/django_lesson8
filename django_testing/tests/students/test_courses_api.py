@@ -12,11 +12,6 @@ def client():
 
 
 @pytest.fixture
-def student():
-    return Student.objects.create(name='Василий Пупкин')
-
-
-@pytest.fixture
 def course():
     return baker.make(Course)
 
